@@ -80,12 +80,21 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 	    <!-- } 게시물 상단 버튼 끝 -->
     </section>
 
+
+
     <section id="bo_v_atc">
         <h2 id="bo_v_atc_title">본문</h2>
         <div id="bo_v_share">
         	<?php include_once(G5_SNS_PATH."/view.sns.skin.php"); ?>
 	        <?php if ($scrap_href) { ?><a href="<?php echo $scrap_href;  ?>" target="_blank" class="btn btn_b03" onclick="win_scrap(this.href); return false;"><i class="fa fa-bookmark" aria-hidden="true"></i> 스크랩</a><?php } ?>
 	    </div>
+
+        <div class="row">
+            <div class="col">담당자 : <?php echo $view['wr_1']; ?></div>
+            <div class="col">연락처 : <?php echo $view['wr_2']; ?></div>
+            <div class="col">이메일 : <?php echo $view['wr_3']; ?></div>
+            <div class="col">프로젝트 정보 : <?php echo $view['wr_4']; ?></div>
+        </div>
 
         <?php
         // 파일 출력
