@@ -94,6 +94,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             <div class="col">연락처 : <?php echo $view['wr_2']; ?></div>
             <div class="col">이메일 : <?php echo $view['wr_3']; ?></div>
             <div class="col">프로젝트 정보 : <?php echo $view['wr_4']; ?></div>
+            <div class="col">예산 : <?php echo $view['wr_5']; ?></div>
         </div>
 
         <?php
