@@ -2,6 +2,7 @@
 include_once('./_common.php');
 include_once(G5_LIB_PATH.'/naver_syndi.lib.php');
 include_once(G5_CAPTCHA_PATH.'/captcha.lib.php');
+include_once(G5_LIB_PATH.'/mailer.lib.php');
 
 // [code] :: check
 $_project = implode(";",$_POST['wr_4']);
@@ -294,6 +295,9 @@ if ($w == '' || $w == 'r') {
                      wr_9 = '$wr_9',
                      wr_10 = '$wr_10' ";
     sql_query($sql);
+
+    // mailer
+    mailer('메이크프로덕션 상담신청', 'makedesign0724@gmail.com', 'makedesign0724@gmail.com', '[문의] 메이크프로덕션 상담신청.', '<span style="font-size:9pt;">[홈페이지 상담신청] 상담신청 <br /> * 제목 : '. $wr_subject .'<br /> * 성함 : '. $wr_1 .' <br /> * 이메일 : '. $wr_3 .'<br /> * 연락처 : '. $wr_2 .'<br /> * 예산 : ' . $wr_5 . '<br /> * 프로젝트 : ' . $_project . '<br /> * 내용 : ' . $wr_content, 1);
 
     $wr_id = sql_insert_id();
 

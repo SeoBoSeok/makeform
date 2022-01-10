@@ -34,6 +34,9 @@ include_once('../common.php');
     <script src="js/custom.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script>
+      var g5_bbs_url   = "<?php echo G5_BBS_URL ?>";
+    </script>
 </head>
 <body>
   <div class="container">  
