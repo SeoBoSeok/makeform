@@ -100,7 +100,43 @@ include_once('../common.php');
                       <h3>프로젝트 정보</h3>
                     </div>
                     <div class="project-type">
+                    <div>
+                        <input type="checkbox" name="wr_4[]" id="branding" value="branding"/>
+                        <label for="branding">브랜딩 영상</label>
+                      </div>
                       <div>
+                        <input type="checkbox" name="wr_4[]" id="promotion" value="promotion"/>
+                        <label for="promotion">홍보 영상</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="wr_4[]" id="ad" value="ad"/>
+                        <label for="ad">광고 영상</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="wr_4[]" id="fashion" value="fashion"/>
+                        <label for="fashion">패션 필름 영상</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="wr_4[]" id="making" value="making"/>
+                        <label for="making">메이킹 필름 영상</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="wr_4[]" id="motion" value="motion"/>
+                        <label for="motion">모션그래픽 개발</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="wr_4[]" id="content" value="content"/>
+                        <label for="content">콘텐츠 개발</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="wr_4[]" id="spot" value="spot"/>
+                        <label for="spot">현장 스케치 영상</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="wr_4[]" id="etc" value="etc"/>
+                        <label for="etc">기타 영상</label>
+                      </div>
+                      <!-- <div>
                         <input type="checkbox" id="brand" name="wr_4[]" value="brand"/>
                         <label for="brand">브랜드 영상</label>
                       </div>
@@ -131,7 +167,7 @@ include_once('../common.php');
                       <div>
                         <input type="checkbox" id="content" name="wr_4[]" value="content"/>
                         <label for="content">콘텐츠 개발</label>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                   <div class="send-box3"> 
